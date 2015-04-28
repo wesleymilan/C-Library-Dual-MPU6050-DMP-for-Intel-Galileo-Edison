@@ -790,7 +790,6 @@ class MPU6050 {
             long long timeCheck();
             void timeReset();
                 
-            void setDmpDebug(bool status);
             bool dmpStartDevice(uint8_t address, int xGyroOffset, int yGyroOffset, int zGyroOffset);
             bool dmpGetData();
             Quaternion getDmpQuaternion();

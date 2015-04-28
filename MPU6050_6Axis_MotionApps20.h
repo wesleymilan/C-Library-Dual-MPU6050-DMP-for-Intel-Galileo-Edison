@@ -76,7 +76,7 @@ THE SOFTWARE.
 /**
  * Instance DMP variables
  */
-bool dmpDebug = false;
+bool dmpDebug = true;
 bool dmpReady = false;              // set true if DMP init was successful
 uint8_t dmpIntStatus = false;       // holds actual interrupt status byte from MPU
 uint8_t dmpStatus;                  // return status after each device operation (0 = success, !0 = error)
@@ -344,7 +344,7 @@ long long MPU6050::timeCheck()
     
     if (interval >= timeAvg)
     {
-        printf("Interval\n");
+        if(dmpDebug) printf("Interval\n");
         return cur;
     }/*
     else if (timeCountCatch < timeCountTarget)
@@ -352,7 +352,7 @@ long long MPU6050::timeCheck()
         printf("Count\n");
         return cur;
     }*/
-    else printf("Pass %d >= %d and %d < %d - %lld\n", interval, timeAvg, timeCountCatch, timeCountTarget, cur);
+    else if(dmpDebug) printf("Pass %d >= %d and %d < %d - %lld\n", interval, timeAvg, timeCountCatch, timeCountTarget, cur);
             
     return 0;
 }
@@ -379,15 +379,6 @@ void MPU6050::timeReset()
     timeAvg = 0;
     timeCountCatch = 0;
     timeLastCatch = getMilliTime(false);
-}
-
-/**
- * Set debug (default: false)
- * @param status
- */
-void setDmpDebug(bool status)
-{
-    dmpDebug = status;
 }
 
 /**
