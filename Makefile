@@ -15,10 +15,10 @@ $(CMN_OBJS) $(DMP_OBJS) : $(HDRS)
 demo_raw: $(CMN_OBJS) $(RAW_OBJS)
 	$(CXX) -o $@ $^ -lm
 
-demo_dmp: $(CMN_OBJS) $(RAW_OBJS)
+demo_dmp: $(CMN_OBJS) $(DMP_OBJS)
 	$(CXX) -o $@ $^ -lm
 	
-demo_optimized: $(CMN_OBJS) $(DMP_OBJS)
+demo_optimized: $(CMN_OBJS) $(OPT_OBJS)
 	$(CXX) -o $@ $^ -lm
 	
 .PHONY:clean

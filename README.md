@@ -23,6 +23,7 @@ I need your help to improve this library:
 
 TODO list:
 - Reorganize the functions and remove function code from header files
+- Turn the capture data and timing data private inside each class instead share with all instances
 - Implement interruption detection even using time functions to accurate the performance and avoid data loss
 - Make it compatible with other boards like RaspBerryPI, Edison, PCDuino, etc
 
