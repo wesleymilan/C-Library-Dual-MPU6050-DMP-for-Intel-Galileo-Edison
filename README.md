@@ -27,6 +27,9 @@ TODO list:
 - Implement interruption detection even using time functions to accurate the performance and avoid data loss
 - Make it compatible with other boards like RaspBerryPI, Edison, PCDuino, etc
 
+Português: https://www.youtube.com/watch?v=xhzFpyFzdWA
+English: https://www.youtube.com/watch?v=VUckxlyy28I
+
 PLEASE FORK, improve and send a pull request to help us
 
 Enjoy
