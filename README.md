@@ -33,6 +33,6 @@ English: https://www.youtube.com/watch?v=VUckxlyy28I
 
 PLEASE FORK, improve and send a pull request to help us
 
-Thanks to qq95538 for Intel Edison version (DMP_for_Intel_Edison)
+Thanks to qq95538 for Intel Edison version (DMP_for_Intel_Edison) and Invensense eMPL version
 
 Enjoy
